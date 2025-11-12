@@ -10,7 +10,7 @@ body {
     background: #191919;
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    border: 5px solid red;
+    /*border: 5px solid red;*/
     min-width: 375px;
 
 }
@@ -218,7 +218,6 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
-
 
 label {
     font-weight: 400;
@@ -491,9 +490,6 @@ footer .music_service {
     margin: 0
 }
 
-/* @media screen and (min-width: 1060px) and (max-width: 1400px) {
-
-} */
 
 @media screen and (max-width: 1040px) {
     .container {
@@ -631,6 +627,7 @@ footer .music_service {
 
     .logo_soc_wrap {
         margin-bottom: 130px;
+        max-width: 100%;
     }
 
     .media_wrap {
@@ -772,6 +769,11 @@ footer .music_service {
         padding: 31px 15px 31px 14px;
     }
 
+    .third_section_img {
+        max-height: 467px;
+    }
+
+
     .section_fourth_wrap .card {
         margin: 60px 0;
         padding: 60px 20px;
@@ -806,5 +808,4 @@ footer .music_service {
         padding: 60px 20px;
     }
 }
-
 
