@@ -19,7 +19,7 @@ burger.addEventListener("click", () => {
         burger.setAttribute("src", "./assets/img/iconamoon_menu-burger-horizontal-light.svg");
         burger_wrap.style.transition = "transform 1.2s";
         burger_menu = false;
-        header.style.position = "static";
+        header.style.position = "relative";
     }
 
 })

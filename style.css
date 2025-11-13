@@ -518,7 +518,7 @@ footer .music_service {
         backdrop-filter: blur(25px);
         background: rgba(25, 25, 25, 0.7);
         transform: translateY(-100%);
-        z-index: 999;
+        z-index: 998;
     }
 
     .burger_menu_wrap > .menu {
