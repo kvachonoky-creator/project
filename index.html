@@ -7,20 +7,278 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <div class="header_wrap">
-                <img class="logo" src="./assets/img/LOGO.svg" alt="logo">
-                <nav>
-                    <img class="burger-menu" src="./assets/img/iconamoon_menu-burger-horizontal-light.svg"
-                        alt="burger-menu">
+<div class="burger_menu_wrap">
+    <ul class="menu">
+        <li class="menu-li"><a class="menu-link" href="#home">Home</a></li>
+        <li class="menu-li"><a class="menu-link" href="#episodes">Episodes</a></li>
+        <li class="menu-li"><a class="menu-link" href="#about">About</a></li>
+        <li class="menu-li"><a class="menu-link" href="#contact">Contact</a></li>
+    </ul>
+</div>
+<header>
+    <div class="container">
+        <div class="header_wrap">
+            <img class="logo" src="./assets/img/LOGO.svg" alt="logo">
+            <nav>
+                <img class="burger-menu" src="./assets/img/iconamoon_menu-burger-horizontal-light.svg"
+                     alt="burger-menu">
+                <ul class="menu">
+                    <li class="menu-li"><a class="menu-link" href="#home">Home</a></li>
+                    <li class="menu-li"><a class="menu-link" href="#episodes">Episodes</a></li>
+                    <li class="menu-li"><a class="menu-link" href="#about">About</a></li>
+                    <li class="menu-li"><a class="menu-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section id="home">
+    <div class="container">
+        <div class="section_first_wrap">
+            <div class="main_img_wrap">
+                <img class="main_img" src="./assets/img/main-IMAGE.png" alt="main_img">
+            </div>
+            <div class="main_content">
+                <h1>Take your podcast to the <span class="word_next">next</span> <span
+                        class="word_level">level</span>
+                </h1>
+                <span class="listen_on">Listen on</span>
+                <ul class="music_service">
+                    <li><a href="" target="_blank"><img src="./assets/img/spotify.svg" alt="spotify"></a></li>
+                    <li><a href="" target="_blank"><img src="./assets/img/pocket_casts.svg" alt="pocket_casts"></a>
+                    </li>
+                    <li><a href="" target="_blank"><img src="./assets/img/soundCloud.svg" alt="soundCloud"></a>
+                    </li>
+                    <li><a href="" target="_blank"><img src="./assets/img/apple_podcasts.svg"
+                                                        alt="apple_podcasts"></a>
+                    </li>
+                    <li><a href="" target="_blank"><img src="./assets/img/overcasts.svg" alt="overcasts"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="episodes">
+    <div class="container">
+        <div class="section_second_wrap">
+            <div class="head_second_section">
+                <h2 class="head_section_h2">Latest episodes</h2>
+                <button class="head_section_button">View all episodes</button>
+            </div>
+            <article class="card">
+                <picture>
+                    <source media="(max-width:1040px)" srcset="./assets/img/episode3_tab.png">
+                    <img class="card-img" src="./assets/img/episode3.png" alt="episode3">
+                </picture>
+
+                <div class="card_wrap">
+                    <label>
+                        Gear
+                    </label>
+                    <span class="text_episode">
+                            Episode <span class="number_episode
+                            ">3</span>
+                        </span>
+                    <h2 class="h2_episode_3">
+                        Should you get outboard audio gear?
+                    </h2>
+                    <p>
+                        Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s
+                        our
+                        reasons
+                        on
+                        why you might want to consider picking something up.
+                    </p>
+                    <button class="button_article">View Episode Details</button>
+                </div>
+            </article>
+            <article class="card">
+                <picture>
+                    <source media="(max-width:1040px)" srcset="./assets/img/eposide2_tab.png">
+                    <img class="card-img" src="./assets/img/episode2.png" alt="episode2">
+                </picture>
+                <div class="card_wrap">
+                    <label class="label_episode2">
+                        Tips & Tricks
+                    </label>
+                    <span class="text_episode">
+                            Episode <span class="number_episode
+                            ">2</span>
+                        </span>
+                    <h2 class="h2_episode_2">
+                        Mic tricks to take you to the next level
+                    </h2>
+                    <p>
+                        Stop rolling with those default settings on your mic. These small tweaks will take you from
+                        sounding
+                        good to
+                        great.
+                    </p>
+                    <button class="button_article">View Episode Details</button>
+                </div>
+            </article>
+            <article class="card third">
+                <picture>
+                    <source media="(max-width:1040px)" srcset="./assets/img/episode1_tab.png">
+                    <img class="card-img" src="./assets/img/episode1.png" alt="episode1">
+                </picture>
+                <div class="card_wrap"><label>
+                    Gear
+                </label>
+                    <span class="text_episode">
+                            Episode <span class="number_episode
+                            ">1</span>
+                        </span>
+                    <h2 class="h2_episode_1">
+                        The best microphone under $200
+                    </h2>
+                    <p>
+                        With so many microphones on the market, how are you supposed to know what’s the best? Take a
+                        look at
+                        our
+                        top
+                        picks.
+                    </p>
+                    <button class="button_article">View Episode Details</button>
+                </div>
+
+            </article>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div class="section_third_wrap">
+            <div class="main_third_section">
+                <a class="arrow_link" href="" target="_blank">
+                    <img class="arrow_img" src="./assets/img/arrow.png" alt="arrow"></a>
+                <span class="arrow_signature">Meet your host</span>
+                <h2 class="h2_third_section">Jacob Paulaner</h2>
+                <p>Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
+                <p class="text_third_section">He’s here to help you level up your game by sharing everything he’s
+                    learned along the way.</p>
+            </div>
+            <img class="third_section_img" src="./assets/img/third_section_img.png" alt="third_section_img">
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="section_fourth_wrap">
+            <div class="card">
+                <div class="fourth_text_wrap">
+                    <span class="text_fourth_section">Email Newsletter</span>
+                    <h2 class="h2_fourth_section">Subscribe <br> for updates</h2>
+                </div>
+                <form method="post">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="section_fifth_wrap">
+            <div class="feedback_wrap">
+                <article class="feedback">
+                    <div class="stars_wrap">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                    </div>
+                    <p class="comments_user">I can’t recommend this podcast enough</p>
+                    <span class="name_user">Betty Lacey</span>
+                </article>
+                <article class="feedback">
+                    <div class="stars_wrap">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                    </div>
+                    <p class="comments_user two">Jacob is the best in the business</p>
+                    <span class="name_user">Adam Driver</span>
+                </article>
+                <article class="feedback">
+                    <div class="stars_wrap">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                    </div>
+                    <p class="comments_user">A wealth of audio knowledge</p>
+                    <span class="name_user">Marcus Brown</span>
+                </article>
+
+
+                <article class="feedback">
+                    <div class="stars_wrap">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                    </div>
+                    <p class="comments_user">Every episode is a gem!</p>
+                    <span class="name_user">Jessica Knowl</span>
+                </article>
+                <article class="feedback fifth">
+                    <div class="stars_wrap">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                    </div>
+                    <p class="comments_user">Whoa whoa, let me take some notes!</p>
+                    <span class="name_user">Scott Adams</span>
+                </article>
+                <article class="feedback six">
+                    <div class="stars_wrap">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                        <img src="./assets/img/star.svg" alt="star_rating">
+                    </div>
+                    <p class="comments_user">I’ve upped my game considerably since I started listening</p>
+                    <span class="name_user">Steven Blast</span>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+<footer id="contact">
+    <div class="container">
+        <div class="footer_wrap">
+            <div class="logo_soc_wrap">
+                <a href=""><img class="logo" src="./assets/img/foot_logo.svg" alt="logo"></a>
+                <div class="soc_wrap">
+                    <img src="./assets/img/inst.svg" alt="instagram">
+                    <img src="./assets/img/twit.svg" alt="twitter">
+                    <img src="./assets/img/facebook.svg" alt="facebook">
+                </div>
+            </div>
+            <div class="media_wrap">
+                <nav class="foot_nav_menu">
                     <ul class="menu">
                         <li class="menu-li"><a class="menu-link" href="#home">Home</a></li>
                         <li class="menu-li"><a class="menu-link" href="#episodes">Episodes</a></li>
@@ -28,29 +286,26 @@
                         <li class="menu-li"><a class="menu-link" href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-            </div>
-        </div>
-
-    </header>
-    <section id="home">
-        <div class="container">
-            <div class="section_first_wrap">
-                <div class="main_img_wrap">
-                    <img class="main_img" src="./assets/img/main-IMAGE.png" alt="main_img">
-                </div>
-                <div class="main_content">
-                    <h1>Take your podcast to the <span class="word_next">next</span> <span
-                            class="word_level">level</span>
-                    </h1>
-                    <span class="listen_on">Listen on</span>
+                <nav class="foot_nav_info">
+                    <ul class="leg_off_info">
+                        <li class="info-li"><a class="info-link" href="">Style Guide</a></li>
+                        <li class="info-li"><a class="info-link" href="">Instructions</a></li>
+                        <li class="info-li"><a class="info-link" href="">Changelog</a></li>
+                        <li class="info-li"><a class="info-link" href="">Credit</a></li>
+                        <li class="info-li"><a class="info-link" href="">Powered by Webflow</a></li>
+                        <li class="info-li"><a class="info-link" href="">Licenses</a></li>
+                    </ul>
+                </nav>
+                <div>
                     <ul class="music_service">
                         <li><a href="" target="_blank"><img src="./assets/img/spotify.svg" alt="spotify"></a></li>
-                        <li><a href="" target="_blank"><img src="./assets/img/pocket_casts.svg" alt="pocket_casts"></a>
+                        <li><a href="" target="_blank"><img src="./assets/img/pocket_casts.svg"
+                                                            alt="pocket_casts"></a>
                         </li>
                         <li><a href="" target="_blank"><img src="./assets/img/soundCloud.svg" alt="soundCloud"></a>
                         </li>
                         <li><a href="" target="_blank"><img src="./assets/img/apple_podcasts.svg"
-                                    alt="apple_podcasts"></a>
+                                                            alt="apple_podcasts"></a>
                         </li>
                         <li><a href="" target="_blank"><img src="./assets/img/overcasts.svg" alt="overcasts"></a>
                         </li>
@@ -58,256 +313,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="episodes">
-        <div class="container">
-            <div class="section_second_wrap">
-                <div class="head_second_section">
-                    <h2 class="head_section_h2">Latest episodes</h2>
-                    <button class="head_section_button">View all episodes</button>
-                </div>
-                <article class="card">
-                    <picture>
-                        <source media="(max-width:1040px)" srcset="./assets/img/episode3_tab.png">
-                        <img class="card-img" src="./assets/img/episode3.png" alt="episode3">
-                    </picture>
-
-                    <div class="card_wrap">
-                        <label>
-                            Gear
-                        </label>
-                        <span class="text_episode">
-                            Episode <span class="number_episode
-                            ">3</span>
-                        </span>
-                        <h2 class="h2_episode_3">
-                            Should you get outboard audio gear?
-                        </h2>
-                        <p>
-                            Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s
-                            our
-                            reasons
-                            on
-                            why you might want to consider picking something up.
-                        </p>
-                        <button class="button_article">View Episode Details</button>
-                    </div>
-                </article>
-                <article class="card">
-                    <picture>
-                        <source media="(max-width:1040px)" srcset="./assets/img/eposide2_tab.png">
-                        <img class="card-img" src="./assets/img/episode2.png" alt="episode2">
-                    </picture>
-                    <div class="card_wrap">
-                        <label class="label_episode2">
-                            Tips & Tricks
-                        </label>
-                        <span class="text_episode">
-                            Episode <span class="number_episode
-                            ">2</span>
-                        </span>
-                        <h2 class="h2_episode_2">
-                            Mic tricks to take you to the next level
-                        </h2>
-                        <p>
-                            Stop rolling with those default settings on your mic. These small tweaks will take you from
-                            sounding
-                            good to
-                            great.
-                        </p>
-                        <button class="button_article">View Episode Details</button>
-                    </div>
-                </article>
-                <article class="card third">
-                    <picture>
-                        <source media="(max-width:1040px)" srcset="./assets/img/episode1_tab.png">
-                        <img class="card-img" src="./assets/img/episode1.png" alt="episode1">
-                    </picture>
-                    <div class="card_wrap"><label>
-                            Gear
-                        </label>
-                        <span class="text_episode">
-                            Episode <span class="number_episode
-                            ">1</span>
-                        </span>
-                        <h2 class="h2_episode_1">
-                            The best microphone under $200
-                        </h2>
-                        <p>
-                            With so many microphones on the market, how are you supposed to know what’s the best? Take a
-                            look at
-                            our
-                            top
-                            picks.
-                        </p>
-                        <button class="button_article">View Episode Details</button>
-                    </div>
-
-                </article>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="container">
-            <div class="section_third_wrap">
-                <div class="main_third_section">
-                    <a class="arrow_link" href="" target="_blank">
-                        <img class="arrow_img" src="./assets/img/arrow.png" alt="arrow"></a>
-                    <span class="arrow_signature">Meet your host</span>
-                    <h2 class="h2_third_section">Jacob Paulaner</h2>
-                    <p>Jacob has a background in audio engineering, and has been podcasting since the early days.</p>
-                    <p class="text_third_section">He’s here to help you level up your game by sharing everything he’s
-                        learned along the way.</p>
-                </div>
-                <img class="third_section_img" src="./assets/img/third_section_img.png" alt="third_section_img">
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="section_fourth_wrap">
-                <div class="card">
-                    <div class="fourth_text_wrap">
-                        <span class="text_fourth_section">Email Newsletter</span>
-                        <h2 class="h2_fourth_section">Subscribe <br> for updates</h2>
-                    </div>
-                    <form method="post">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="section_fifth_wrap">
-                <div class="feedback_wrap">
-                    <article class="feedback">
-                        <div class="stars_wrap">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                        </div>
-                        <p class="comments_user">I can’t recommend this podcast enough</p>
-                        <span class="name_user">Betty Lacey</span>
-                    </article>
-                    <article class="feedback">
-                        <div class="stars_wrap">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                        </div>
-                        <p class="comments_user two">Jacob is the best in the business</p>
-                        <span class="name_user">Adam Driver</span>
-                    </article>
-                    <article class="feedback">
-                        <div class="stars_wrap">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                        </div>
-                        <p class="comments_user">A wealth of audio knowledge</p>
-                        <span class="name_user">Marcus Brown</span>
-                    </article>
-
-
-                    <article class="feedback">
-                        <div class="stars_wrap">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                        </div>
-                        <p class="comments_user">Every episode is a gem!</p>
-                        <span class="name_user">Jessica Knowl</span>
-                    </article>
-                    <article class="feedback fifth">
-                        <div class="stars_wrap">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                        </div>
-                        <p class="comments_user">Whoa whoa, let me take some notes!</p>
-                        <span class="name_user">Scott Adams</span>
-                    </article>
-                    <article class="feedback six">
-                        <div class="stars_wrap">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                            <img src="./assets/img/star.svg" alt="star_rating">
-                        </div>
-                        <p class="comments_user">I’ve upped my game considerably since I started listening</p>
-                        <span class="name_user">Steven Blast</span>
-                    </article>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <footer id="contact">
-        <div class="container">
-            <div class="footer_wrap">
-                <div class="logo_soc_wrap">
-                    <a href=""><img class="logo" src="./assets/img/foot_logo.svg" alt="logo"></a>
-                    <div class="soc_wrap">
-                        <img src="./assets/img/inst.svg" alt="instagram">
-                        <img src="./assets/img/twit.svg" alt="twitter">
-                        <img src="./assets/img/facebook.svg" alt="facebook">
-                    </div>
-                </div>
-                <div class="media_wrap">
-                    <nav class="foot_nav_menu">
-                        <ul class="menu">
-                            <li class="menu-li"><a class="menu-link" href="#home">Home</a></li>
-                            <li class="menu-li"><a class="menu-link" href="#episodes">Episodes</a></li>
-                            <li class="menu-li"><a class="menu-link" href="#about">About</a></li>
-                            <li class="menu-li"><a class="menu-link" href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <nav class="foot_nav_info">
-                        <ul class="leg_off_info">
-                            <li class="info-li"><a class="info-link" href="">Style Guide</a></li>
-                            <li class="info-li"><a class="info-link" href="">Instructions</a></li>
-                            <li class="info-li"><a class="info-link" href="">Changelog</a></li>
-                            <li class="info-li"><a class="info-link" href="">Credit</a></li>
-                            <li class="info-li"><a class="info-link" href="">Powered by Webflow</a></li>
-                            <li class="info-li"><a class="info-link" href="">Licenses</a></li>
-                        </ul>
-                    </nav>
-                    <div>
-                        <ul class="music_service">
-                            <li><a href="" target="_blank"><img src="./assets/img/spotify.svg" alt="spotify"></a></li>
-                            <li><a href="" target="_blank"><img src="./assets/img/pocket_casts.svg"
-                                        alt="pocket_casts"></a>
-                            </li>
-                            <li><a href="" target="_blank"><img src="./assets/img/soundCloud.svg" alt="soundCloud"></a>
-                            </li>
-                            <li><a href="" target="_blank"><img src="./assets/img/apple_podcasts.svg"
-                                        alt="apple_podcasts"></a>
-                            </li>
-                            <li><a href="" target="_blank"><img src="./assets/img/overcasts.svg" alt="overcasts"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
+</footer>
+<script src="main.js"></script>
 </body>
 
 </html>

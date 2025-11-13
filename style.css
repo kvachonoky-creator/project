@@ -10,7 +10,6 @@ body {
     background: #191919;
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    /*border: 5px solid red;*/
     min-width: 375px;
 
 }
@@ -24,7 +23,7 @@ a {
 }
 
 .container {
-     /*border: 1px solid red;*/
+    /*border: 1px solid red;*/
     max-width: 1330px;
     margin: 0 auto;
     padding: 0 15px;
@@ -46,6 +45,10 @@ a {
 }
 
 .burger-menu {
+    display: none;
+}
+
+.burger_menu_wrap {
     display: none;
 }
 
@@ -502,6 +505,34 @@ footer .music_service {
 
     .burger-menu {
         display: inline-block;
+    }
+
+
+    .burger_menu_wrap {
+        display: inline-block;
+        position: fixed;
+        width: 100vw;
+        min-width: 100%;
+        height: calc(100vh - 120px);
+        min-height: calc(100% - 120px);
+        backdrop-filter: blur(25px);
+        background: rgba(25, 25, 25, 0.7);
+        transform: translateY(-100%);
+        z-index: 999;
+    }
+
+    .burger_menu_wrap > .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        height: 100%
+    }
+
+    .burger_menu_wrap > .menu-link {
+        font-weight: 600;
     }
 
     .section_first_wrap {
